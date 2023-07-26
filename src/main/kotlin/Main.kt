@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     println("Total number count: $count")
     println("Starting with: $number")
     for (i in number..count){
-        if (i % 2 == 0) {
+        if (isEven(i)) {
             print("$i ")
             evenNumbers++
         }
@@ -13,3 +13,5 @@ fun main(args: Array<String>) {
     println("\n===========================================")
     println("Total even numbers: $evenNumbers")
 }
+
+private fun isEven(i: Int) = i % 2 == 0
